@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btn_show_float_iscandrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开放所有拖拽" />
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btn_show_float_candrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禁止所有拖拽" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/textView"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加 多个 FloatView" />
+    </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_hide_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销毁 所有 FloatView" />
+
+        <LinearLayout
+            android:layout_marginBottom="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吸边方式：" />
+
+            <RadioGroup
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_left_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textSize="8dp"
+                    android:text="左右" />
+
+                <RadioButton
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/radio_top_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8dp"
+                    android:text="上下" />
+
+            </RadioGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_all_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一键吸附左右" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                android:id="@+id/btn_all_top"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一键吸附上下" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
